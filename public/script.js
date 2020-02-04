@@ -8,7 +8,7 @@ const STROKE_COLOR = '#ebebeb'
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight)
     background(BACKGROUND_COLOR)
-    strokeWeight(1)
+    strokeWeight(2)
     noFill()
 
     seq = fibonacci(50)
@@ -57,5 +57,5 @@ function draw() {
         x: width / 2,
         y: height / 2
     }
-    t += .005
+    t += .0009
 }
