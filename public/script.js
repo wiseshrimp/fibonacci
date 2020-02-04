@@ -57,5 +57,5 @@ function draw() {
         x: width / 2,
         y: height / 2
     }
-    t += .001
+    t += .08
 }
