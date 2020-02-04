@@ -34,9 +34,11 @@ function fibonacci(limit) {
 
 function draw() {
     background(BACKGROUND_COLOR)
-    stroke(STROKE_COLOR)
     translate(end.x, end.y)
     for (let idx = 0; idx < seq.length; idx++) {
+            stroke(
+                Math.ceil(Math.random() * 255), 
+                150, 150)
         beginShape()
         let val = seq[idx]
         arc(
@@ -57,5 +59,5 @@ function draw() {
         x: width / 2,
         y: height / 2
     }
-    t += .08
+    t += .0025
 }
